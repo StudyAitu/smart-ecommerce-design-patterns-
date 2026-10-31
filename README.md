@@ -8,6 +8,14 @@
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
 ---
+**Course:** Software Design Patterns  
+**Language:** Java 17
+
+**Team Members:**  
+
+Student 1: Ibray Muratbek  
+
+Student 2: Nikolay Kozlov
 
 ## 📌 Project Overview
 
