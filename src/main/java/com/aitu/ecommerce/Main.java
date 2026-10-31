@@ -95,7 +95,7 @@ public class Main {
         };
 
         if (firstChoice < 1 || firstChoice > 3
-        secondChoice < 1  secondChoice > 3
+                || secondChoice < 1 || secondChoice > 3
                 || firstQuantity <= 0
                 || secondQuantity <= 0) {
 
@@ -113,14 +113,13 @@ public class Main {
                 scanner.nextLine().equalsIgnoreCase("yes");
 
         // FACADE PATTERN
-        ShoppingFacade shoppingFacade =
-                new ShoppingFacade();
+        ShoppingFacade shoppingFacade = new ShoppingFacade();
 
         shoppingFacade.checkout(
                 customerName,
                 products[firstChoice - 1],
                 firstQuantity,
-                products[secondChoce - 1],
+                products[secondChoice - 1],
                 secondQuantity,
                 strategy,
                 giftWrapping,
