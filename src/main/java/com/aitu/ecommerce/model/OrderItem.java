@@ -1,4 +1,29 @@
-package model;
+package com.aitu.ecommerce.model;
 
 public class OrderItem {
+    private final Product product;
+    private final int quantity;
+
+    public OrderItem(Product product, int quantity) {
+        if (product == null || quantity <= 0) {
+            throw new IllegalArgumentException(
+                    "Invalid product or quantity"
+            );
+        }
+
+        this.product = product;
+        this.quantity = quantity;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public double getSubtotal() {
+        return product.getPrice() * quantity;
+    }
 }
